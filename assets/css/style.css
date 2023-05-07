@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+/*
+    Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+.bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.bg-light-gray {
+  background-color: hsl(212, 45%, 89%);
+}
+
+.bg-grayish-blue {
+  background-color: hsl(220, 15%, 55%);
+}
+
+.bg-dark-blue {
+  background-color: hsl(218, 44%, 22%);
+}
+
+.bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.primary-light-gray {
+  color: hsl(212, 45%, 89%);
+}
+
+.primary-grayish-blue {
+  color: hsl(220, 15%, 55%);
+}
+
+.primary-dark-blue {
+  color: hsl(218, 44%, 22%);
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fs-body {
+  font-size: 0.9375rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.qr-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  flex-direction: column;
+  border-radius: 1em;
+  padding: 15px;
+}
+
+.qr-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.qr-content h2 {
+  padding: 25px 15px 15px 15px;
+}
+.qr-content p {
+  font-size: 0.9375rem;
+  padding: 0 20px 20px 20px;
+}
+
+.qr-inner {
+  display: flex;
+  justify-content: center;
+}
+.qr-inner img {
+  border-radius: 1em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 360px) {
+  .qr-container {
+    width: 100%;
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */

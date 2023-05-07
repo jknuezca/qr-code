@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+$clr-white: hsl(0, 0%, 100%);
+$clr-light-gray: hsl(212, 45%, 89%);
+$clr-grayish-blue: hsl(220, 15%, 55%);
+$clr-dark-blue: hsl(218, 44%, 22%);
+
+$ff-primary: 'Outfit', sans-serif;
+
+$ff-body: $ff-primary;
+$ff-heading: $ff-primary;
+
+$fw-regular: 400;
+$fw-bold: 700; 
+
+$fs-regular: 0.9375rem;
+
+$fs-body: $fs-regular;
+
+
+/*
+    Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+
+}
+
+html, 
+body {
+    font-family: $ff-primary;
+
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+.bg-white {
+    background-color: $clr-white;
+}
+.bg-light-gray {
+    background-color: $clr-light-gray;
+}
+.bg-grayish-blue {
+    background-color: $clr-grayish-blue;
+}
+.bg-dark-blue {
+    background-color: $clr-dark-blue; 
+}
+.bg-white {
+    background-color: $clr-white;
+}
+.primary-light-gray {
+    color: $clr-light-gray;
+}
+.primary-grayish-blue {
+    color: $clr-grayish-blue;
+}
+.primary-dark-blue {
+    color: $clr-dark-blue; 
+}
+
+.fw-regular { font-weight: $fw-regular; }
+.fw-bold { font-weight: $fw-bold; }
+
+.fs-body { font-size: $fs-body; }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.qr-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 15px;
+}
+
+.qr-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+        padding: 25px 15px 15px 15px;
+    }
+
+    p {
+        font-size: $fs-regular;
+        padding: 0 20px 20px 20px;
+    }
+}
+
+.qr-inner {
+    display: flex;
+    justify-content: center;
+
+    img {
+        border-radius: 1em;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 360px) {
+    .qr-container {
+        width: 100%;
+        max-width: 300px; 
+    }
+}
